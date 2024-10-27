@@ -24,7 +24,7 @@ app.post('/add', (req, res) => {
   
   // Subtraction: a - b
   app.post('/subtract', (req, res) => {
-    const { a, b } = req.body;Q
+    const { a, b } = req.body;
     const result = a - b;
     res.json({ step1: `Start with ${a} and ${b}`, step2: `Subtract ${b} from ${a}`, result });
   });
